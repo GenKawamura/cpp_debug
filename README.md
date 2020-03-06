@@ -4,7 +4,7 @@
 
 * Class diagram 
 
-![Class diagram of codes](classdiagram_command.png)
+![Class diagram of codes](classdiagram_command2.png)
 
 
 
