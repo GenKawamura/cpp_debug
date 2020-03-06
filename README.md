@@ -2,6 +2,12 @@
 
 * This example is implemented by C++ and Command pattern. 
 
+* Class diagram 
+
+![Class diagram of codes](classdiagram_command.png)
+
+
+
 * [Slide](slide/gdb_exercise.pdf)
 
 
