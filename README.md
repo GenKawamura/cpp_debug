@@ -35,3 +35,4 @@
 
 * [C++ Desigh Pattern in GitHub](https://github.com/JakubVojvoda/design-patterns-cpp)
 * [Software Design Pattern in Wikipedia](https://en.wikipedia.org/wiki/Software_design_pattern)
+* [Wikipedia: Command pattern](https://en.wikipedia.org/wiki/Command_pattern)
