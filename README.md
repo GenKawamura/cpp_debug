@@ -9,7 +9,7 @@
 
  * Clone the repository on GitHub
 
-     	     $ git clone https://github.com/GenKawamura/cpp_debug
+   	     $ git clone https://github.com/GenKawamura/cpp_debug
 	     $ cd cpp_debug
 
  * Compile with simbol table (with '-g' option = GDB flags)
