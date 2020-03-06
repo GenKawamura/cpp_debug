@@ -20,7 +20,7 @@
  * Check when the code outputs segmentation fault
 
 (gdb) r
-Starting program: /a/home/local/gen/mywork/2020/03.welcome_package/cpp_debug/random 
+Starting program: /tmp/cpp_debug/random 
 Starting RandomNumGenerator
 0 = 81569649
 1 = 1761778839
@@ -66,10 +66,10 @@ warning: Source file is more recent than executable.
 // The other simple debugging tools
 
  # show dependency of library
- ldd a.out
+ ldd random
 
  # trace system calls
- strace a.out
+ strace random
 
  # trace system headers
- rewadelf -l a.out 
+ rewadelf -l random

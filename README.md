@@ -1,13 +1,17 @@
 # Emacs, GDB and C++ example
 
-This example is implemented by C++ and Command pattern.
+* This example is implemented by C++ and Command pattern. 
 
- $ git clone 
+* [Slide](slide/gdb_exercise.pdf)
 
 
-## Compile and debug the code which has a simple bug
+## Exersise [Cheat_GDB.txt](https://raw.githubusercontent.com/GenKawamura/cpp_debug/master/Cheat_GDB.txt)
 
- * Compile with simbol table (with -g)
+ * Clone the repository on GitHub
+     	     $ git clone https://github.com/GenKawamura/cpp_debug
+	     $ cd cpp_debug
+
+ * Compile with simbol table (with '-g' option = GDB flags)
 
    	    $ g++ -g main.cpp RandomNumCommand.cpp -o random
 	    $ gdb random
@@ -21,5 +25,5 @@ This example is implemented by C++ and Command pattern.
 
 ## Reference
 
-* [C++ Desigh Pattern in GitHub] [https://github.com/JakubVojvoda/design-patterns-cpp]
-* [Software Design Pattern in Wikipedia] [https://en.wikipedia.org/wiki/Software_design_pattern]
+* [C++ Desigh Pattern in GitHub](https://github.com/JakubVojvoda/design-patterns-cpp)
+* [Software Design Pattern in Wikipedia](https://en.wikipedia.org/wiki/Software_design_pattern)
