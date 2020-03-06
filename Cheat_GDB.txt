@@ -1,0 +1,75 @@
+ ## GDB commands
+ r = run
+ l = display source code
+ b <line> = set break point at <line> 
+ info b = display all break points
+ info stack = display all function stacks
+
+ n = next
+ s = step in
+ c = continue
+
+ p <val> = display val
+ p <&val> = display an address of val
+ p <*val> = display a pointer
+
+ whatis <val> = display type of val
+
+
+
+ * Check when the code outputs segmentation fault
+
+(gdb) r
+Starting program: /a/home/local/gen/mywork/2020/03.welcome_package/cpp_debug/random 
+Starting RandomNumGenerator
+0 = 81569649
+1 = 1761778839
+2 = 463136830
+3 = 445606530
+4 = 1049617509
+5 = 120917373
+6 = 1904196814
+7 = 662271143
+8 = 1166783937
+9 = 1946378672
+10 = 917740387
+11 = 1918529260
+12 = 145706499
+13 = 1745968571
+14 = 757832705
+15 = 12662462
+16 = 1388637711
+17 = 2040772157
+18 = 1264401834
+19 = 1573064596
+20 = 1517406329
+21 = 1405891464
+22 = 251315357
+
+Program received signal SIGBUS, Bus error.
+0x0000000000400c7b in RandomNumReceiver::action (this=0x604010) at RandomNumCommand.cpp:37
+warning: Source file is more recent than executable.
+37	       cout << i << " = " << random[i] << endl;
+
+(gdb) info stack
+#0  0x0000000000400c7b in RandomNumReceiver::action (this=0x604010) at RandomNumCommand.cpp:37
+#1  0x0000000000400e31 in ConcreteCommand::execute (this=0x7fffffffd390) at RandomNumCommand.cpp:65
+#2  0x0000000000400e83 in Invoker::confirm (this=0x7fffffffd380) at RandomNumCommand.cpp:79
+#3  0x0000000000401652 in main () at main.cpp:8
+
+
+
+
+
+
+////////////////////////////////////////////
+// The other simple debugging tools
+
+ # show dependency of library
+ ldd a.out
+
+ # trace system calls
+ strace a.out
+
+ # trace system headers
+ rewadelf -l a.out 
