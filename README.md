@@ -8,6 +8,7 @@
 ## Exersise [Cheat_GDB.txt](https://raw.githubusercontent.com/GenKawamura/cpp_debug/master/Cheat_GDB.txt)
 
  * Clone the repository on GitHub
+
      	     $ git clone https://github.com/GenKawamura/cpp_debug
 	     $ cd cpp_debug
 
@@ -21,6 +22,7 @@
  * Run
  * Set a break point
  * Fix the code
+ * Use std::iterator
 
 
 ## Reference
